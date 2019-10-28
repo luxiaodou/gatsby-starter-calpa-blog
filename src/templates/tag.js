@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 import Card from '../components/Card';
 import SEO from '../components/SEO';
 import Sidebar from '../components/Sidebar';
@@ -41,13 +42,18 @@ const TagPage = ({ data, pageContext }) => {
       <SEO
         title={tag}
         url={`/tag/${tag}`}
-        siteTitleAlt="Calpa's Blog"
+        siteTitleAlt="Luxiaodou's Blog"
         isPost={false}
         description={tag}
         image="https://i.imgur.com/M795H8A.jpg"
       />
     </div>
   );
+};
+
+TagPage.propTypes = {
+  data: PropTypes.any.isRequired,
+  pageContext: PropTypes.any.isRequired,
 };
 
 export default TagPage;

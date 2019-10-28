@@ -1,10 +1,10 @@
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
-    title: 'Calpa&apos;s Blog',
-    description: 'Front End Technical Blog - Calpa',
-    siteUrl: 'https://calpa.me',
-    author: 'Calpa',
+    title: '卢小豆的摸鱼博客',
+    description: 'Technical Blog - Luxiaodou',
+    siteUrl: 'https://luxiaodou.me',
+    author: 'Luxiaodou',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -78,5 +78,6 @@ module.exports = {
     },
     'gatsby-plugin-offline', // put this after gatsby-plugin-manifest
     'gatsby-plugin-netlify', // make sure to put last in the array
+    'gatsby-plugin-netlify-cms',
   ],
 };
